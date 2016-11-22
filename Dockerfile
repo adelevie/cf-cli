@@ -1,5 +1,8 @@
 FROM alpine:3.3
 
+RUN mkdir /app
+WORKDIR /app
+
 ENV PACKAGES "unzip curl openssl ca-certificates git ruby ruby-json"
 
 RUN apk add --update $PACKAGES && rm -rf /var/cache/apk/*
