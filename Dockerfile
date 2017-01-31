@@ -14,6 +14,5 @@ ENV CF_PLUGIN_HOME /cf
 RUN curl -L 'https://cli.run.pivotal.io/stable?release=linux64-binary&version=6.22.2' | tar -zx -C /usr/local/bin
 RUN curl -L 'https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64' -o /usr/local/bin/jq && chmod +x /usr/local/bin/jq
 
-RUN cf install-plugin targets -r -f CF-Community
+RUN cf install-plugin targets -f -r CF-Community
 RUN cf install-plugin autopilot -f -r CF-Community
-
