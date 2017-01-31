@@ -17,3 +17,4 @@ RUN curl -L 'https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64'
 RUN cf install-plugin targets -f -r CF-Community
 RUN cf install-plugin autopilot -f -r CF-Community
 RUN cf install-plugin https://github.com/18F/cg-migrate-db/releases/download/v0.0.3/linux-64-cg-migrate-db -f
+
